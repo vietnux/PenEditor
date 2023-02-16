@@ -38,7 +38,7 @@ export default () => {
 		</html>`;
 
 		var blob = new Blob([html], { type: "text/html; charset=utf-8" });
-		saveAs(blob, `PenEditor-${new Date().getTime()}.html`);
+		saveAs(blob, `CodeEditor-${new Date().getTime()}.html`);
 	}, []);
 
 	const onFormat = useCallback((type) => {

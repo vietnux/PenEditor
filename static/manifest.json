@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "PenEditor",
+	"name": "CodeEditor",
 	"version": "1.0.0",
-	"description": "PenEditor,a editor like pen",
+	"description": "CodeEditor,a editor like pen",
 	"browser_action": {
 		"default_icon": "images/icon.png"
 	},

@@ -36,8 +36,8 @@ plugins = plugins.concat([
 	}),
 	new CopyWebpackPlugin([
 		{
-			from: "./favicon.ico",
-			to: "favicon.ico",
+			from: "../images/code-editor-favico.gif",
+			to: "code-editor-favico.gif",
 		},
 	]),
 	new CopyWebpackPlugin([
@@ -48,8 +48,8 @@ plugins = plugins.concat([
 	]),
 	new HtmlWebpackPlugin({
 		chunks:['app'],
-		title: "PenEditor",
-		favicon: path.resolve("favicon.ico"),
+		title: "Code Editor",
+		favicon: path.resolve("../images/code-editor-favico.gif"),
 		template: "./src/template.html",
 	}),
 ]);
@@ -63,13 +63,13 @@ module.exports = {
 	output: {
 		filename: "modules/[name].[hash].js",
 		publicPath: "./",
-		path: path.resolve(__dirname, "dist"),
+		path: path.resolve(__dirname, "../code-editor"),
 	},
 	devtool: process.env.NODE_ENV == "production" ? "" : "source-map",
 	devServer: {
 		host: "127.0.0.1",
 		port: 8099,
-		contentBase: "./dist",
+		contentBase: "./code-editor",
 	},
 	resolve: {
 		extensions: [".js", ".json", ".jsx", ".less", ".css"],
